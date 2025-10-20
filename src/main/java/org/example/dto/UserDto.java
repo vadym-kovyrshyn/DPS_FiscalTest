@@ -4,11 +4,11 @@ import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 
 @Data
-@JacksonXmlRootElement(localName = "user")
+@JacksonXmlRootElement(localName = "User")
 public class UserDto {
-    @JacksonXmlProperty
+    @JacksonXmlProperty(localName = "Name")
     private final String name;
 
-    @JacksonXmlProperty
+    @JacksonXmlProperty(localName = "Age")
     private final int age;
 }
